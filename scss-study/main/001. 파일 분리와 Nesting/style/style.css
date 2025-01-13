@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/* 여러 줄 주석은 볼 수 있음. */
+nav {
+  background: lightcoral;
+  padding: 10px;
+  height: 50px;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+nav ul li {
+  color: white;
+  margin-right: 10px;
+}
+
+.background-img {
+  width: 100%;
+  height: auto;
+  background-image: url("https://search.pstatic.net/sunny/?src=https%3A%2F%2Fi.pinimg.com%2F736x%2F69%2F27%2F26%2F692726d6a6bc69d12e3948056a638885.jpg&type=a340");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  background-color: red;
+  transition: all 1s;
+}
+.box:hover {
+  background-color: blue;
+}
+
+.one {
+  color: red;
+}
+.one .two {
+  color: blue;
+}
+.one .two .three {
+  color: green;
+}
+p {
+  color: yellow;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,62 @@
+// 한줄 주석 볼 수 없음.
+/* 여러 줄 주석은 볼 수 있음. */
+
+// ex-1
+nav{
+  background: lightcoral;
+  padding: 10px;
+  height: 50px;
+
+  ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+
+    li{
+      color: white;
+      margin-right: 10px;
+
+    }
+  }
+}
+
+// ex-2
+.background-img {
+  width: 100%;
+  height: auto;
+  
+  background: {
+    image: url("https://search.pstatic.net/sunny/?src=https%3A%2F%2Fi.pinimg.com%2F736x%2F69%2F27%2F26%2F692726d6a6bc69d12e3948056a638885.jpg&type=a340");
+    position: center center;
+    repeat: no-repeat;
+  };
+}
+
+// ex-3
+.box {
+  width: 300px;
+  height: 300px;
+  background-color: red;
+  transition: all 1s;
+  
+  //'&'는 상위에 있는 부모 선택자를 가르킴. 
+  &:hover {
+    background-color: blue;
+  }
+}
+
+// ex-4
+.one {
+  color: red;
+  .two{
+    color: blue;
+    .three{
+      color: green;
+
+      // @at-root 키워드를 사용하면 중첩에서 벗어날 수 있음. 
+      @at-root p{
+        color: yellow;
+      }
+    }
+  }
+}
