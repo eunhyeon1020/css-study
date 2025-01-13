@@ -1,0 +1,5 @@
+@for $dmsgus from 1 through 7 {
+  .image-box:nth-child(#{$dmsgus}){
+    background-image: url('dive-9093321_1280#{$dmsgus}.jpg');
+  }
+}

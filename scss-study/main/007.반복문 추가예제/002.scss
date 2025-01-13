@@ -1,0 +1,9 @@
+// 실무에 적용되는 코드X (억지코드)
+@for $dmsgus from 1 through 10 {
+  .content-#{$dmsgus}{
+    font-size: #{$dmsgus *10}px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+  }
+}

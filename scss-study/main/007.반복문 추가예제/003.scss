@@ -1,0 +1,9 @@
+$dmsgus: 5;
+@while $dmsgus > 1 {
+  $dmsgus: $dmsgus - 1;
+  .content-#{$dmsgus}{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+  }
+}
