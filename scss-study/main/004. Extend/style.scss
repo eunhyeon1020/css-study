@@ -1,0 +1,37 @@
+.profile-user {
+  background-image: url("user.png");
+  background-size: cover;
+  background-position: 50% 50%;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.comment-user {
+  // @extend --> 클래스에 있는 코드 전체를 가져옴.
+  @extend .profile-user; 
+}
+
+// '%' 선택자는 css로 컴파일 되지 않음. 
+%base-button { 
+  width: 133px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+.follow-button {
+  @extend %base-button;
+  background-color: #fff;
+  color: #ff375f;
+  border: 2px solid red;
+}
+
+.message-button {
+  @extend %base-button;
+  background-color: #ff375f;
+  color: white;
+}
