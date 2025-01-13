@@ -1,0 +1,27 @@
+// '$' 기호를 사용하여 변수 생성가능 
+$bgColor : rgb(69, 146, 69);
+$font-h1: 28px;
+
+// list사용 가능(인덱스는 1부터 시작)
+$valid-sides: left, center, right;
+
+// maps는 () 괄호 안에 key:value 형태로 저장되어 사용 (키 중복 X, 값 중복 O)
+// map 관련 내장함수 : map-get(map,key), map-keys(map), map-values(map) 등
+$font-sizes: ("myh1": 45px, "myh2": 19px, "myp": 16px);
+
+h1{
+  $spanColor: blue;
+  color: $bgColor;
+
+  font-size: map-get($font-sizes, myh1)*2;
+  
+  span {
+    color: $spanColor;
+  }
+}
+
+p {
+  // color: $spanColor; 지역변수이기 때문에 사용 불가 
+  // nth(list, n) --> list 중 2번째 꺼 
+  text-align: nth($valid-sides, 2);
+}
